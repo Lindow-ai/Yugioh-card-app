@@ -1,2 +1,6 @@
-<h1>{{title}}</h1>
-<p>{{subTitle}}</p>
+<h1>Card Name</h1>
+<ol class="page">
+    {{#each card.data}}
+    <li><a href="/{{this.name}}">{{this.name}}</a></li>
+    {{/each}}
+</ol>
